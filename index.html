@@ -1,80 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>Professional ID Card - Front &amp; Back</title>
-<link href="style.css" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ID Card – Mbere & Renkre</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<div class="id-card-container" onclick="flipCard()">
-<div class="id-card">
-<!-- Front Side -->
-<div class="id-card-side front">
-<img alt="Background" class="bg" src="background.png"/>
-<div class="content">
-<img alt="Passport" class="passport" src="passport.jpg"/>
-<h1>Nnah Mbere-Abasi Cletus</h1>
-<h2>Founder | Managing Partner | Designated Partner</h2>
-<p class="rc">RC: 8455814  |  TIN: 33144464-0001</p>
-<p class="contact">📞 +234 906 789 0947</p>
-<p class="email">📧 brezy477@gmail.com</p>
-<p class="website">🌐 mbere-renkre-global-services.com</p>
-<img class="qr" src="qr-code.png"/>
-</div>
-</div><!-- Back Side -->
-<div class="id-card-side back">
-<img alt="Background" class="bg" src="background.png"/>
-<div class="content">
-<p><b>NIN:</b> 73040927016</p>
-<p><b>Emergency Contact:</b> +44 7917 490 325</p>
-<p><b>Official Motto:</b> Innovating for a Sustainable Future</p>
-<img class="barcode" src="barcode.png"/>
-<img class="datamatrix" src="datamatrix.png"/>
-<div class="signature-line">
-        ___________________________<br/>
-        Signature &amp; Date
-      </div>
-<p class="footer">Mbere &amp; Renkre Prime Ventures and Global Services LLP</p>
-</div>
-</div>
-</div>
-</div> <script src="script.js"></script></body>
-</html>ature &amp; Date
+  <div class="id-card">
+    <div class="top-section">
+      <img src="passport.jpg" alt="Passport Photo">
+      <img src="qr-code.png" alt="QR Code">
+    </div>
 
-<footer>
-<p class="microtext">Official Document | Innovating for a Sustainable Future</p>
-</footer>
+    <h1>Mbere & Renkre Prime Ventures and Global Services LLP</h1>
 
+    <p><strong>Name:</strong> Nnah Mbere‑Abasi Cletus</p>
+    <p><strong>Position:</strong> Founder | Designated Partner</p>
+    <p><strong>RC Number:</strong> 8455814</p>
+    <p><strong>TIN:</strong> 35927498‑0001</p>
+    <p><strong>NIN:</strong> 46699968851</p>
+    <p><strong>Contact:</strong> +234 906 789 0947</p>
+    <p><strong>Emergency Contact:</strong> +44 7917 490 325</p>
+    <p><strong>Email:</strong> brezy477@gmail.com</p>
+    <p><strong>Website:</strong> <a href="https://mbere‑abasi.github.io/mbere‑renkre‑global‑services/">mbere‑abasi.github.io/…</a></p>
 
+    <div class="images">
+      <img src="barcode.png" alt="Barcode">
+      <img src="seal.png" alt="Official Seal">
+    </div>
 
-<script src="script.js"></script>
+    <hr>
+    <p><strong>Signature & Date:</strong> ____________________</p>
+    <em>Official Document | Innovating for a Sustainable Future</em>
 
-v class="label"&gt;Name:
-<div class="value">Nnah Mbere-Abasi Cletus</div>
-<div class="label">Position:</div>
-<div class="value">Founder | Designated Partner</div>
-<div class="label">RC Number:</div>
-<div class="value">RC 7331686</div>
-<div class="label">TIN:</div>
-<div class="value">35927498-0001</div>
-<div class="label">NIN:</div>
-<div class="value">46699968851</div>
-<div class="label">Contact:</div>
-<div class="value">+2349067890947</div>
-<div class="label">Emergency Contact:</div>
-<div class="value">+447917490325</div>
-<div class="label">Email:</div>
-<div class="value">brezy477@gmail.com</div>
-<div class="label">Website:</div>
-<div class="value">https://mbere-abasi.github.io/mbere-renkre-global-services/</div>
-<img alt="Barcode" class="barcode" src="barcode.png">
-<div class="signature-area">
-        _______________________<br>
-        Signature &amp; Date
-      </br></div>
-<div class="footer">Official Document | Innovating for a Sustainable Future</div>
-
-
-
-
-</img>
+    <button onclick="printIDCard()">🖨️ Print ID</button>
+  </div>
+</body>
+</html>
