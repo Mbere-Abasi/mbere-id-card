@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ID Card container */
+.id-card {
+  width: 860px;
+  height: 540px;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left side (passport) */
+.id-left img {
+  width: 160px;
+  border-radius: 12px;
+  border: 2px solid #c9a247;
+}
+
+/* Right side (details) */
+.id-right {
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+.id-right h1 {
+  font-size: 28px;
+  color: #f4c95d;
+  margin-bottom: 8px;
+}
+
+.id-right h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.id-right p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Contact lines */
+.contact-line {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+/* QR/Barcode */
+.codes {
+  display: flex;
+  gap: 18px;
+  margin-top: 15px;
+}
+
+.codes img {
+  height: 70px;
+  background: white;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+/* Signature area */
+.signature {
+  margin-top: 30px;
+  font-style: italic;
+  color: #ccc;
+}
+
+/* --- Responsive Enhancements --- */
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .id-card {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+
+  .left, .right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .left img.passport, .left img.qr {
+    max-width: 100px;
+  }
+
+  .barcode {
+    width: 100px;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .signature-area {
+    position: static;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .footer {
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+}
