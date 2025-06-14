@@ -3,34 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Firm ID Card - Horizontal</title>
+  <title>Mbere & Renkre ID Card</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="id-card-wrapper">
+  <div class="id-card-container">
+    
+    <!-- FRONT SIDE -->
     <div class="id-card front">
-      <div class="top">
-        <img src="logo.png" alt="Firm Logo" class="firm-logo">
-        <img src="passport.jpg" alt="Passport" class="passport">
+      <img src="background.png" alt="Background" class="bg" />
+      <div class="content">
+        <img src="logo.png" alt="Logo" class="logo" />
+        <img src="passport.jpg" alt="Passport" class="passport" />
+        <div class="info">
+          <h2>Nnah Mbere-Abasi Cletus</h2>
+          <p>Founder | Designated Partner</p>
+          <p>RC: 8455814</p>
+          <p>TIN: 35927498-0001</p>
+          <p>NIN: 46699968851</p>
+          <p>📞 +2349067890947</p>
+          <p>📧 brezy477@gmail.com</p>
+        </div>
+        <img src="qr-code.png" alt="QR Code" class="qr" />
       </div>
-      <div class="details">
-        <h2>Nnah Mbere-Abasi Cletus</h2>
-        <p><strong>Founder | Designated Partner</strong></p>
-        <p>RC: 8455814 | TIN: 35927498-0001</p>
-        <p>NIN: 46699968851</p>
-        <p>📞 +2349067890947 | ✉ brezy477@gmail.com</p>
-        <p>🌐 <a href="https://mbere-abasi.github.io/mbere-renkre-global-services/">Visit Website</a></p>
-      </div>
-      <img src="qr-code.png" alt="QR Code" class="qr">
     </div>
 
+    <!-- BACK SIDE -->
     <div class="id-card back">
-      <img src="seal.png" alt="Seal" class="seal">
-      <img src="barcode.png" alt="Barcode" class="barcode">
-      <p class="signature">Signature & Date</p>
-      <p class="footer-note">Official Document | Innovating for a Sustainable Future</p>
+      <img src="background.png" alt="Background" class="bg" />
+      <div class="content back-content">
+        <img src="seal.png" alt="Official Seal" class="seal" />
+        <img src="barcode.png" alt="Barcode" class="barcode" />
+        <div class="firm-info">
+          <p>MBERE & RENKRE PRIME VENTURES AND GLOBAL SERVICES LLP</p>
+          <p>Fashion · Food Services · Health & Wellness</p>
+          <p>Education Support · Transport · Real Estate</p>
+          <p>Digital Solutions · Event Planning</p>
+          <p><a href="https://mbere-abasi.github.io/mbere-renkre-global-services/" target="_blank">Visit Website</a></p>
+        </div>
+        <p class="signature">Signature & Date: ___________________</p>
+        <p class="footnote">Official Document | Innovating for a Sustainable Future</p>
+      </div>
     </div>
+  </div>
+
+  <div class="print-btn">
     <button onclick="printIDCard()">🖨️ Print ID Card</button>
   </div>
 </body>
