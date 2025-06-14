@@ -3,39 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ID Card – Mbere & Renkre</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Firm ID Card - Horizontal</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="id-card">
-    <div class="top-section">
-      <img src="passport.jpg" alt="Passport Photo">
-      <img src="qr-code.png" alt="QR Code">
+  <div class="id-card-wrapper">
+    <div class="id-card front">
+      <div class="top">
+        <img src="logo.png" alt="Firm Logo" class="firm-logo">
+        <img src="passport.jpg" alt="Passport" class="passport">
+      </div>
+      <div class="details">
+        <h2>Nnah Mbere-Abasi Cletus</h2>
+        <p><strong>Founder | Designated Partner</strong></p>
+        <p>RC: 8455814 | TIN: 35927498-0001</p>
+        <p>NIN: 46699968851</p>
+        <p>📞 +2349067890947 | ✉ brezy477@gmail.com</p>
+        <p>🌐 <a href="https://mbere-abasi.github.io/mbere-renkre-global-services/">Visit Website</a></p>
+      </div>
+      <img src="qr-code.png" alt="QR Code" class="qr">
     </div>
 
-    <h1>Mbere & Renkre Prime Ventures and Global Services LLP</h1>
-
-    <p><strong>Name:</strong> Nnah Mbere‑Abasi Cletus</p>
-    <p><strong>Position:</strong> Founder | Designated Partner</p>
-    <p><strong>RC Number:</strong> 8455814</p>
-    <p><strong>TIN:</strong> 35927498‑0001</p>
-    <p><strong>NIN:</strong> 46699968851</p>
-    <p><strong>Contact:</strong> +234 906 789 0947</p>
-    <p><strong>Emergency Contact:</strong> +44 7917 490 325</p>
-    <p><strong>Email:</strong> brezy477@gmail.com</p>
-    <p><strong>Website:</strong> <a href="https://mbere‑abasi.github.io/mbere‑renkre‑global‑services/">mbere‑abasi.github.io/…</a></p>
-
-    <div class="images">
-      <img src="barcode.png" alt="Barcode">
-      <img src="seal.png" alt="Official Seal">
+    <div class="id-card back">
+      <img src="seal.png" alt="Seal" class="seal">
+      <img src="barcode.png" alt="Barcode" class="barcode">
+      <p class="signature">Signature & Date</p>
+      <p class="footer-note">Official Document | Innovating for a Sustainable Future</p>
     </div>
-
-    <hr>
-    <p><strong>Signature & Date:</strong> ____________________</p>
-    <em>Official Document | Innovating for a Sustainable Future</em>
-
-    <button onclick="printIDCard()">🖨️ Print ID</button>
+    <button onclick="printIDCard()">🖨️ Print ID Card</button>
   </div>
 </body>
 </html>
